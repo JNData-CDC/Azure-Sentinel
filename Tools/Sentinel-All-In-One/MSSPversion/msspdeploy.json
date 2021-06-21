@@ -7,21 +7,21 @@
             "metadata": {
                 "description": "Specify a unique name for your offer"
             },
-            "defaultValue": "<enter the MSSP offer name>"
+            "defaultValue": "CDC Sentinel"
         },
         "mspOfferDescription": {
             "type": "string",
             "metadata": {
                 "description": "Name of the Managed Service Provider offering"
             },
-            "defaultValue": "<enter the MSSP offer description>"
+            "defaultValue": "CDC SOC service"
         },
         "managedByTenantId": {
             "type": "string",
             "metadata": {
                 "description": "Specify the tenant id of the Managed Service Provider"
             },
-            "defaultValue": "<enter the MSSP Tenant ID (where your identities reside)>"
+            "defaultValue": "4a41543b-c15c-4f50-8797-9e7e1fc49a70"
         },
         "authorizations": {
             "type": "array",
@@ -29,11 +29,31 @@
                 "description": "Specify an array of objects, containing tuples of Azure Active Directory principalId, a Azure roleDefinitionId, and an optional principalIdDisplayName. The roleDefinition specified is granted to the principalId in the provider's Active Directory and the principalIdDisplayName is visible to customers."
             },
             "defaultValue": [
-                {
-                    "principalId": "917ba8d6-5c07-4d11-ae26-dccba5df6405",
-                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
-                    "principalIdDisplayName": "SOC users"
-                }
+                { 
+                    "principalId": "d2101e41-db63-4d4a-a36d-42fb527cbd52", 
+                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+                    "principalIdDisplayName": "Azure Sentinel Contributor (PIM Enabled)" 
+                }, 
+                { 
+                    "principalId": "81a2557f-4656-4a09-8df1-c3d1c6072bd6", 
+                    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+                    "principalIdDisplayName": "Azure Sentinel Reader" 
+                },  
+                { 
+                    "principalId": "49ce53f1-47b2-4293-a002-0efd66ef4500", 
+                    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+                    "principalIdDisplayName": "Azure Sentinel Responder" 
+                },  
+                { 
+                    "principalId": "bb2e1f87-f8be-4e1d-bf2c-8867f64e8649", 
+                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+                    "principalIdDisplayName": "TheHive Connector" 
+                },  
+                { 
+                    "principalId": "bb2e1f87-f8be-4e1d-bf2c-8867f64e8649", 
+                    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
+                    "principalIdDisplayName": "TheHive Connector" 
+                }    
             ]
         },
         "rgName": {
