@@ -54,8 +54,7 @@
         "o365RuleId": "[concat('o365', uniqueString(parameters('ruleGuid')))]",
         "fusionRuleId": "[concat('fusion', uniqueString(parameters('ruleGuid')))]",
         "mlbaSshRuleId": "[concat('mlSsh',uniqueString(parameters('ruleGuid')))]",
-        "mlbaRdpRuleId": "[concat('mlRdp',uniqueString(parameters('ruleGuid')))]",
-        "mtpRuleId": "[concat('mtp',uniqueString(parameters('ruleGuid')))]"
+        "mlbaRdpRuleId": "[concat('mlRdp',uniqueString(parameters('ruleGuid')))]"
 
     },
     "resources": [
@@ -192,22 +191,6 @@
             "properties": {
                 "enabled": true,
                 "alertRuleTemplateName": "f71aba3d-28fb-450b-b192-4e76a83015c8"
-            }
-        }, 
-        {
-            "condition": "[contains(parameters('dataConnectorsKind'), 'MicrosoftThreatProtection')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
-            "apiVersion": "2019-01-01-preview",
-            "location": "[parameters('location')]",
-            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('mtpRuleId'))]",
-            "kind": "MicrosoftThreatProtection",
-            "properties": {
-                "tenantId": "[parameters('tenantId')]",
-                "dataTypes": {
-                    "incidents": {
-                        "state": "enabled"
-                    }
-                }
             }
         }
     ],
