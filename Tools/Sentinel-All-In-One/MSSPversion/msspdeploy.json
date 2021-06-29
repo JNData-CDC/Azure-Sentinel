@@ -5,7 +5,7 @@
         "mspOfferName": {
             "type": "string",
             "metadata": {
-                "description": "Specify a unique name for your offer"
+                "description": "CDC Sentinel"
             },
             "defaultValue": "CDC Sentinel"
         },
@@ -21,7 +21,7 @@
             "metadata": {
                 "description": "Specify the tenant id of the Managed Service Provider"
             },
-            "defaultValue": "4a41543b-c15c-4f50-8797-9e7e1fc49a70"
+            "defaultValue": "c2478b9f-9813-4ba0-9cee-b2c722552759"
         },
         "authorizations": {
             "type": "array",
@@ -30,30 +30,20 @@
             },
             "defaultValue": [
                 { 
-                    "principalId": "d2101e41-db63-4d4a-a36d-42fb527cbd52", 
+                    "principalId": "f903d2ba-6227-4c8c-b452-95fc15ddd1cb", 
                     "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
                     "principalIdDisplayName": "Azure Sentinel Contributor (PIM Enabled)" 
                 }, 
                 { 
-                    "principalId": "81a2557f-4656-4a09-8df1-c3d1c6072bd6", 
+                    "principalId": "3b031e3f-c3e5-4d9c-b413-40a2a31bf7e9", 
                     "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
                     "principalIdDisplayName": "Azure Sentinel Reader" 
                 },  
                 { 
-                    "principalId": "49ce53f1-47b2-4293-a002-0efd66ef4500", 
+                    "principalId": "30401854-8706-459b-a3b6-1d619c1ddea8", 
                     "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
                     "principalIdDisplayName": "Azure Sentinel Responder" 
-                },  
-                { 
-                    "principalId": "bb2e1f87-f8be-4e1d-bf2c-8867f64e8649", 
-                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
-                    "principalIdDisplayName": "TheHive Connector" 
-                },  
-                { 
-                    "principalId": "bb2e1f87-f8be-4e1d-bf2c-8867f64e8649", 
-                    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
-                    "principalIdDisplayName": "TheHive Connector" 
-                }    
+                }   
             ]
         },
         "rgName": {
