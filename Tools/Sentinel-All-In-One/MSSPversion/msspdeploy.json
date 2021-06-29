@@ -155,7 +155,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/JNData-CDC/Azure-Sentinel/sentinel_all_in_one_m365_defender/Tools/"
+            "defaultValue": "https://raw.githubusercontent.com/JNData-CDC/Azure-Sentinel/prod/Tools/"
         }
     },
     "variables": {
