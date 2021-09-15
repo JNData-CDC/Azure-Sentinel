@@ -43,7 +43,17 @@
                     "principalId": "30401854-8706-459b-a3b6-1d619c1ddea8", 
                     "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
                     "principalIdDisplayName": "Azure Sentinel Responder" 
-                }   
+                },  
+                { 
+                    "principalId": "a872d8fb-5557-4e31-a980-d3910446b638", 
+                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+                    "principalIdDisplayName": "TheHive Connector - Azure Sentinel Contributor" 
+                },  
+                { 
+                    "principalId": "a872d8fb-5557-4e31-a980-d3910446b638", 
+                    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
+                    "principalIdDisplayName": "TheHive Connector - Log Analytics Reader" 
+                }    
             ]
         },
         "rgName": {
